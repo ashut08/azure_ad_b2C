@@ -12,9 +12,11 @@ packages:
   aad_b2c_webview:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: bd7fb9cda02c82df34d23c85b8f7312478e7fd54
+      url: "https://github.com/ashut08/azure_ad_b2C"
+    source: git
     version: "0.0.46"
   analyzer:
     dependency: transitive

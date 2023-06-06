@@ -17,8 +17,10 @@ Navigates to screen in app after successful sign in
 To use the package in your Flutter app, add the following code to your main.dart file:
 ```yaml
 dependencies:
-  git:
+  aad_b2c_webview:
+    git:
       url: https://github.com/ashut08/azure_ad_b2C
+      ref: main # branch name
 ```
 
 ## Usage

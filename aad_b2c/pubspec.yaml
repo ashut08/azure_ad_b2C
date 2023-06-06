@@ -37,7 +37,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   aad_b2c_webview:
-    path: ../
+    git:
+      url: https://github.com/ashut08/azure_ad_b2C
+      ref: main # branch name
 
 dev_dependencies:
   flutter_test:
