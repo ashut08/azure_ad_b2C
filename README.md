@@ -1,8 +1,8 @@
 Azure AD B2C Embedded Webview
 ============================
-
+This repository duplicate of [aad_b2c_webview](https://pub.dev/packages/aad_b2c_webview) with some modification.
 Azure AD B2C Embedded Webview is a very simple Flutter package that demonstrates how to use the embedded web view to sign in users with Azure AD B2C.
-Currently, using Flutter packages - [appAuth](https://pub.dev/packages/flutter_appauth) and [flutter_azure_b2c](https://pub.dev/packages/flutter_azure_b2c) redirects to browser and doesn't provide in-app experience.
+
 
 This package embeds the web view of the user flow endpoint using [flutter_appview](https://pub.dev/packages/webview_flutter) and redirects the user as per onRedirect callback method.
 
@@ -17,7 +17,8 @@ Navigates to screen in app after successful sign in
 To use the package in your Flutter app, add the following code to your main.dart file:
 ```yaml
 dependencies:
-  aad_b2c_webview: <latest_version>
+  git:
+      url: https://github.com/ashut08/azure_ad_b2C
 ```
 
 ## Usage
