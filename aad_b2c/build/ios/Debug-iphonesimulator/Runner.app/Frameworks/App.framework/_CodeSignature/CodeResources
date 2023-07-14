@@ -8,6 +8,10 @@
 		<data>
 		85iaADE5tc/NukRC+KGdiZaZ0ZA=
 		</data>
+		<key>flutter_assets/AssetManifest.bin</key>
+		<data>
+		3wLEM2Cbf20EXvxaAFOQieFTb4I=
+		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
 		Nml8GiJP8iLKxdqUdc0QOXgVxq0=
@@ -22,7 +26,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		E01dGNk0ug9uULphR6obkOTIXrQ=
+		xL00mKjsyPX7S1XSakF4oEg4L3c=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -30,11 +34,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		G7f+W7DM6WgAF6e4R0YmmZObSn4=
+		dRka9t86+Ik10kMCLsudB3ofChY=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		dNxgKZnAqJozme/iS+CavaxqeA4=
+		ZWvinvgKSaXsnBc2zg01FPpyIwk=
 		</data>
 		<key>flutter_assets/packages/aad_b2c_webview/assets/icons8-azure-48.png</key>
 		<data>
@@ -50,11 +54,18 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		GIVOmCdKRJPjhwyeBDaqRSmW/rc=
+		wVCDsOQlJhUyvrMuhaM3MeqUNWk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>flutter_assets/AssetManifest.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tl+tEpS+Hhbvsr+ulp+ULa+HNDnH3tlZKBAcer8Sbts=
+			</data>
+		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
@@ -80,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AnW7F3pkRF52F++tFBN8C+/eVm/bTIdT8sLvLFsz9j4=
+			k6uZIX4dqZU3TQt1a6DvsSqPsrCczD/PyAOghrDN6zI=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -94,14 +105,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0WltY9enMx/xAaluQU9u54Z/KOGA8WPZlZ1IIuzDMM=
+			Pdp3wvU0CLVp+3Afd6I6QxM36Oe5dQcuavhGP5QJ6Ec=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AEQnS6oq9P8/YcjV0+V8XWBFPa3mSpEQNUfrW2ukUUM=
+			zG/0Han8PywXNre+OSkc2Tm2sZWvdcToR5RRhX5M6/A=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/aad_b2c_webview/assets/icons8-azure-48.png</key>
@@ -129,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K4h+E8VrnmlmBepiVsQbyWlUOtVSA/UGiqBRPbjQJ+8=
+			pKvVVo/CPIJFzUPS2fhLuWOuiKFXCBKbw9g8gmDjVXE=
 			</data>
 		</dict>
 	</dict>

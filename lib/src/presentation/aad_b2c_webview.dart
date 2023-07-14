@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'package:aad_b2c_webview/src/services/client_authentication.dart';
 import 'package:aad_b2c_webview/src/services/models/optional_param.dart';
 import 'package:aad_b2c_webview/src/services/models/response_data.dart';
@@ -6,6 +7,7 @@ import 'package:aad_b2c_webview/src/services/models/token.dart';
 import 'package:flutter/material.dart';
 import 'package:pkce/pkce.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+
 import '../constants.dart';
 
 /// A widget that embeds the Azure AD B2C web view for authentication purposes.
@@ -154,10 +156,16 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
       body: Stack(
         children: <Widget>[
           WebView(
+            onWebViewCreated: (controller) {
+              controller.clearCache();
+              final cookieManager = CookieManager();
+              cookieManager.clearCookies();
+            },
             key: _key,
             debuggingEnabled: true,
             initialUrl: getUserFlowUrl(
-                userFlow:"${widget.tenantBaseUrl}/${Constants.userFlowUrlEnding}"),
+                userFlow:
+                    "${widget.tenantBaseUrl}/${Constants.userFlowUrlEnding}"),
             javascriptMode: JavascriptMode.unrestricted,
             onPageFinished: (String url) {
               setState(() {
@@ -170,18 +178,17 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
             },
           ),
           Visibility(
-            visible: (isLoading || showRedirect),
-            child: const Center(
-              child: SizedBox(
-                height: 250,
-                width: 250,
-                child: CircularProgressIndicator(
-                  backgroundColor: Colors.white,
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+              visible: (isLoading || showRedirect),
+              child: const Center(
+                child: SizedBox(
+                  height: 250,
+                  width: 250,
+                  child: CircularProgressIndicator(
+                    backgroundColor: Colors.white,
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                  ),
                 ),
-              ),
-            ) 
-          ),
+              )),
           Visibility(
             visible: isLoading,
             child: const Positioned(
@@ -228,7 +235,7 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
     final codeChallenge = "&code_challenge=${pkcePairInstance.codeChallenge}";
 
     String newParameters = "";
-    if(widget.optionalParameters.isNotEmpty){
+    if (widget.optionalParameters.isNotEmpty) {
       for (OptionalParam param in widget.optionalParameters) {
         newParameters += "&${param.key}=${param.value}";
       }
@@ -247,7 +254,7 @@ class ADB2CEmbedWebViewState extends State<ADB2CEmbedWebView> {
         widget.responseType +
         promptParam +
         codeChallenge +
-        codeChallengeMethod+
+        codeChallengeMethod +
         newParameters;
   }
 }
